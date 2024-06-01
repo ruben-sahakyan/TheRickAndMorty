@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pinia": "^2.1.7",
+    "primevue": "^3.52.0",
+    "sass": "^1.77.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
