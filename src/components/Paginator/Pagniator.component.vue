@@ -12,8 +12,10 @@ const onPaginator = (event: any) => {
 
 
 <template>
-    <Paginator class="paginator" :rows="20" :totalRecords="800"
-    @page="onPaginator($event)" v-model:first="store.resetPage"></Paginator>
+    <div v-show="store.characters?.length >= 20">
+        <Paginator class="paginator" :rows="20" :totalRecords="800"
+        @page="onPaginator($event)" v-model:first="store.resetPage"></Paginator>
+    </div>
 </template>
 
 
